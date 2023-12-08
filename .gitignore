@@ -1,22 +1,9 @@
-g1-sdk-ios-flutter.zip
-g1-sdk-ios-flutter/
-images/
-*.DS_Store
-SVN-GOTHAM.zip
-SVN-GOTHAM/
-*.docx
-UI GALAXY PAY 21-06.pdf
-User flow.pdf
-*xcworkspace/xcuserdata/*
-GPay BE UAT-update passcode api.postman_collection.json
-.idea/
-Flow Payment.png
-Flow SignInOTP_SignUp.png
-GetBalanceFromSDK (1).png
-GetBalanceFromSDK.png
-GPay BE UAT.postman_collection.json
-GalaxyPayAppDemo.zip
-Data test QR Pay/
-Data test QR Pay.zip
-Pods/
-Podfile.lock
+.DS_Store
+/.build
+/Packages
+/*.xcodeproj
+xcuserdata/
+DerivedData/
+.swiftpm/config/registries.json
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.netrc
