@@ -29,7 +29,7 @@ public class GPayPackage: NSObject {
 
     public override init() {
         print("init GPayPackage")
-        let basicAuth = ""
+        let basicAuth = GPay.shared.getOpenTelemetryAuth()
         self.otlpTraceExporter = OtlpTraceExporter(
             channel: client,
             config: OtlpConfiguration(
@@ -40,7 +40,6 @@ public class GPayPackage: NSObject {
             )
         )
         super.init()
-        NotificationCenter.default.addObserver(self, selector: #selector(handlerLogging), name: Notification.Name("logging"), object: nil)
         
 //         Initialize the tracer provider. The tracer provider is used to expose major API operations, preprocess spans, and configure custom clocks.
 //         Configure the custom rules that are used to generate trace IDs and span IDs and configure custom samplers. You can configure the settings based on your business requirements.
@@ -71,19 +70,23 @@ public class GPayPackage: NSObject {
         GPay.shared.showGPWallet(userInfo, callback: { isInValidData, transactionStatus, isBackFromHomePage, isFlowComplete, isTokenExpired in
             callback(isInValidData, transactionStatus, isBackFromHomePage, isFlowComplete, isTokenExpired)
         })
+        GPay.shared.broadcastLogInfo(callback: { view, sdkVersion, env in
+            var info = userInfo
+            info["view"] = view
+            info["SDK_Version"] = sdkVersion
+            info["env"] = sdkVersion
+            self.handlerLogging(info)
+        })
     }
     
-    @objc func handlerLogging(_ notification: Notification) {
-        print("handlerLogging")
-        if let payload = notification.userInfo?["payload"] as? String,
-            let data = payload.toDictionary(),
-            let view = data["view"] as? String, view.trimmingCharacters(in: .whitespacesAndNewlines) != "",
-            let phone = data["Phone"] as? String, phone.trimmingCharacters(in: .whitespacesAndNewlines) != "",
-           let language = data["Language"] as? String, language.trimmingCharacters(in: .whitespacesAndNewlines) != "",
-            let tenant = data["Tenant"] as? String, tenant.trimmingCharacters(in: .whitespacesAndNewlines) != "",
-            let sdkVersion = data["SDK_Version"] as? String, sdkVersion.trimmingCharacters(in: .whitespacesAndNewlines) != "",
-            let env = data["Env"] as? String, env.trimmingCharacters(in: .whitespacesAndNewlines) != "",
-            let xOS = data["X-OS"] as? String, xOS.trimmingCharacters(in: .whitespacesAndNewlines) != ""
+    func handlerLogging(_ userInfo: [String: String]) {
+        print("handlerLogging:::\(userInfo)")
+        if let view = userInfo["view"], view.trimmingCharacters(in: .whitespacesAndNewlines) != "",
+        let phone = userInfo["phone"], phone.trimmingCharacters(in: .whitespacesAndNewlines) != "",
+        let language = userInfo["language"], language.trimmingCharacters(in: .whitespacesAndNewlines) != "",
+        let tenant = userInfo["tenantId"], tenant.trimmingCharacters(in: .whitespacesAndNewlines) != "",
+        let sdkVersion = userInfo["SDK_Version"], sdkVersion.trimmingCharacters(in: .whitespacesAndNewlines) != "",
+        let env = userInfo["Env"], env.trimmingCharacters(in: .whitespacesAndNewlines) != ""
         {
             let span = self.tracer.spanBuilder(spanName: view).startSpan()
             span.setAttribute(key: "Phone", value: phone)
@@ -91,7 +94,7 @@ public class GPayPackage: NSObject {
             span.setAttribute(key: "Tenant", value: tenant)
             span.setAttribute(key: "SDK Version", value: sdkVersion)
             span.setAttribute(key: "Env", value: env)
-            span.setAttribute(key: "X-OS", value: xOS)
+            span.setAttribute(key: "X-OS", value: "iOS")
             span.end()
         }
     }

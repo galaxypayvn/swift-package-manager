@@ -478,6 +478,8 @@ extension GalaxyPaySDK.GPay {
   public func showGPHomeWallet(_ userInfo: [Swift.String : Any], callback: @escaping (Swift.Bool, Swift.Int, Swift.Bool, Swift.Bool, Swift.Bool) -> Swift.Void)
   public func getSelectedLanguage(callback: @escaping (Swift.String) -> Swift.Void)
   public func broadcastNotification(_ payload: Swift.String)
+  public func broadcastLogInfo(callback: @escaping (Swift.String, Swift.String, Swift.String) -> Swift.Void)
+  public func getOpenTelemetryAuth() -> Swift.String
 }
 extension GalaxyPaySDK.GPay {
   public func showVerInformation(callback: @escaping (Swift.String) -> Swift.Void)
@@ -903,6 +905,20 @@ extension Foundation.URLSessionConfiguration {
     get
     set
   }
+}
+public protocol ClassNameProtocol {
+  static var className: Swift.String { get }
+  var className: Swift.String { get }
+}
+extension GalaxyPaySDK.ClassNameProtocol {
+  public static var className: Swift.String {
+    get
+  }
+  public var className: Swift.String {
+    get
+  }
+}
+extension ObjectiveC.NSObject : GalaxyPaySDK.ClassNameProtocol {
 }
 @_hasMissingDesignatedInitializers public class OpenTelemetryService {
   @objc deinit

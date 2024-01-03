@@ -18,11 +18,11 @@
 		</data>
 		<key>AddInformationNapasView.nib</key>
 		<data>
-		hFgnxFd0wQ5ZCjT62qxzMxa9nTY=
+		YKyJSDajyrN+ffkvB2nAdRK9yv8=
 		</data>
 		<key>AddLinkBankViewController.nib</key>
 		<data>
-		CCDvr/tbwjp9FN00mgpIiJ51gWk=
+		BYs6r7H5UcRA/doDyJJBw0kVJ5w=
 		</data>
 		<key>AddLinkBankWebNormalViewController.nib</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>AddPinView.nib</key>
 		<data>
-		NWmLdAdOio3upnAbpuPO6zIH2uE=
+		6wbJCPIxR2QSBRcQeGPe4KN2E/k=
 		</data>
 		<key>AlertNeedKycViewController.nib</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		v0gn+q/quU2kmxUhrD4wKGqQFoU=
+		8nl/36Pi7Jimjmx8HHTE5D6rk9k=
 		</data>
 		<key>BankSelectCell.nib</key>
 		<data>
-		kUA2DhOEgdnGg/hOa3PLKoPSLPs=
+		j/f+pac6bqbdKxs5+xAze6+k+jk=
 		</data>
 		<key>BaseModalViewController.nib</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>BillingPickProviderViewController.nib</key>
 		<data>
-		9BRaJqjGFb+LmGBLTVbRJ4+YRvw=
+		Ofg6hNk1JJJnjcaX/rsoVEpgkzk=
 		</data>
 		<key>CameraDeniedView.nib</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>CardIconHorizontalCell.nib</key>
 		<data>
-		rCXhYtDAF3ykBpIE9rrLNspWpwU=
+		ry+i2D/EA1IuA5y10cr3J1eQMZU=
 		</data>
 		<key>CardIconHorizontalGlobalCell.nib</key>
 		<data>
@@ -166,7 +166,7 @@
 		</data>
 		<key>CreateSupportTicketViewController.nib</key>
 		<data>
-		TXS9o6KmTmydpP+m7pnd4LDsSjM=
+		PFORc3Xg+WzSh1HI9MU2v5aVMWw=
 		</data>
 		<key>CustomButtonView.nib</key>
 		<data>
@@ -174,7 +174,7 @@
 		</data>
 		<key>CustomPasswordView.nib</key>
 		<data>
-		Uee+0M2K6gym9u5TnUyCfHeSPVA=
+		kyaAJj19Y15wuVrAnAh+VIqfVYQ=
 		</data>
 		<key>EKycViewController.nib</key>
 		<data>
@@ -187,6 +187,18 @@
 		<key>EnterBillCodeViewController.nib</key>
 		<data>
 		kSI8PdbsP3V9MM+2eHHFpvaHRa4=
+		</data>
+		<key>ExpandableHeaderCell.nib</key>
+		<data>
+		LbfYto6uPpgOemwqDliQZ2w46y8=
+		</data>
+		<key>ExpandableTableCell.nib</key>
+		<data>
+		D5K1DOIe5cTAz2xFiJC67xc5REQ=
+		</data>
+		<key>ExpandableView.nib</key>
+		<data>
+		4IG9ByeqeGk8JgbpNwsPTyUJ+EY=
 		</data>
 		<key>FunctionMenu.nib</key>
 		<data>
@@ -206,11 +218,11 @@
 		</data>
 		<key>HDBankOTPInputView.nib</key>
 		<data>
-		DW4my0G9tnb9xnfHCCEe6a8QV9s=
+		PwkVRd4zmqS1VM7CNFQW668GTXI=
 		</data>
 		<key>Headers/GalaxyPaySDK-Swift.h</key>
 		<data>
-		9bnODnY1ef3n99CJ0raRMivwCK4=
+		2j45Kq4qWihJ387ajMjKl3SLqSY=
 		</data>
 		<key>Headers/GalaxyPaySDK.h</key>
 		<data>
@@ -260,6 +272,10 @@
 		<data>
 		7mlKuFiPO1Ba/hwvy/H6mn0DNhs=
 		</data>
+		<key>ImageFullScreenViewController.nib</key>
+		<data>
+		BeYVSz9OMNrgRFkQCLSQiWJs48w=
+		</data>
 		<key>ImagePreviewView.nib</key>
 		<data>
 		VGlbLcpn7zblWkKjaLkKzo2vEGo=
@@ -274,7 +290,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		OeIdnWQTv5F71FIxdMtN4ZcFu4g=
+		k6ExI/z9O8IkX62uzWFXAGWBqUA=
 		</data>
 		<key>InfomationModalView.nib</key>
 		<data>
@@ -366,7 +382,7 @@
 		</data>
 		<key>KycInformationView.nib</key>
 		<data>
-		QheyeHK2g0S4wWY0nFkMttT2kIY=
+		cha9z09JBKePymHZ6hArRN8U9m4=
 		</data>
 		<key>KycProcessingView.nib</key>
 		<data>
@@ -379,6 +395,10 @@
 		<key>KycSuccessView.nib</key>
 		<data>
 		lJ/eCs68KbXyfXTrgjx4D89QpLk=
+		</data>
+		<key>KycVisaPhotosViewController.nib</key>
+		<data>
+		tTnUthCe96qp9sXC5C+L+ro2pMs=
 		</data>
 		<key>LanguageViewController.nib</key>
 		<data>
@@ -414,11 +434,11 @@
 		</data>
 		<key>LinkHDBankAccountVC.nib</key>
 		<data>
-		HYDZnuxUK75w71Hg/p2QKc8t6VY=
+		3XsJ13PGUvi39qdWJ3c0SKtVRnE=
 		</data>
 		<key>LinkedBankSectionCell.nib</key>
 		<data>
-		ERcdzKCI5E9IUM9S2QCKfKYtxIQ=
+		7CIugp+wf+Cn0GjbEdxqAtEbsoE=
 		</data>
 		<key>LoadingTableViewCell.nib</key>
 		<data>
@@ -454,23 +474,23 @@
 		</data>
 		<key>Modules/GalaxyPaySDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		DemRtmx3nqj/0lRCvDEtmmVhf2w=
+		Bl/1e/C5pGRSCDoXSY2UFtqP8OY=
 		</data>
 		<key>Modules/GalaxyPaySDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		sMQv+nFq+FU/myzu4lWuFDA90Rw=
+		xkPzsnOJc4MMtdfHMBE7LAYB0+8=
 		</data>
 		<key>Modules/GalaxyPaySDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		lNZ/g2auCEZMu3YPO7Kxt57Lw94=
+		YWLlAzskq7NcJSvwlPN8gQdkw8g=
 		</data>
 		<key>Modules/GalaxyPaySDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		sMQv+nFq+FU/myzu4lWuFDA90Rw=
+		xkPzsnOJc4MMtdfHMBE7LAYB0+8=
 		</data>
 		<key>Modules/GalaxyPaySDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		BfW3DOIonjnpQuKiBlUkGT1u2Wc=
+		FkE6Wq7kAPwMoGQGT+uJq1759zM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -486,7 +506,7 @@
 		</data>
 		<key>MyQrViewController.nib</key>
 		<data>
-		vBPHGZrTzsDD9I6ZhYoorxUVPxw=
+		Mvgb04l2ZKTQLqDAk98jgZ0FhgU=
 		</data>
 		<key>NavigationBarView.nib</key>
 		<data>
@@ -538,7 +558,7 @@
 		</data>
 		<key>PaymentCardSelectorViewController.nib</key>
 		<data>
-		lD/OM01fYCt1sDZRaSng19L7xrs=
+		5BNwWatkrERrHbDkhRW7gABYHo8=
 		</data>
 		<key>PaymentMethodsCell.nib</key>
 		<data>
@@ -554,11 +574,11 @@
 		</data>
 		<key>PhotoCollectionViewCell.nib/objects-12.3+.nib</key>
 		<data>
-		/JD4kPTCnXwH0yRpqlS+CNl5S+4=
+		E2t/cPm5ewAjR8qvWIn/0b9V1fQ=
 		</data>
 		<key>PhotoCollectionViewCell.nib/runtime.nib</key>
 		<data>
-		pqI/yfut9etlj/JZS4W9TVhmsNk=
+		skASwHQyBMVHd8+StuQaeygIhRc=
 		</data>
 		<key>PickProviderCell.nib</key>
 		<data>
@@ -566,7 +586,7 @@
 		</data>
 		<key>PinVerifyView.nib</key>
 		<data>
-		WhoBGECIIM4dSmHItkcVNLPz7/E=
+		9pxjANYQwsUm7Qxeu6GQ4mZQvnc=
 		</data>
 		<key>PopupFunctionInDevelop.nib</key>
 		<data>
@@ -598,15 +618,15 @@
 		</data>
 		<key>QRConfirmOrderViewController.nib</key>
 		<data>
-		KaIWWI7+lHVGYcpMiCzZJxFDmo4=
+		+O85EDRvfbNHSXb5J3BO8RKfVhU=
 		</data>
 		<key>QROrderInformationViewController.nib</key>
 		<data>
-		qKFKx4LG3np3Gio9FiMoTM3+TQY=
+		QKUuHg5H8wEIUZUxvLix7e9X6kY=
 		</data>
 		<key>QRViewController.nib</key>
 		<data>
-		ukEEy/P5klhXAKY0aQd75huPtbs=
+		w/2jDKJsdWgpyrmIMv9XUz5+wZg=
 		</data>
 		<key>QrPaymentView.nib</key>
 		<data>
@@ -646,11 +666,11 @@
 		</data>
 		<key>SofCell.nib</key>
 		<data>
-		xzu/46lh3pvDEEeo4ZJyKatSSb8=
+		/EPu/iNiixA9ZS0qtXLPeaBln8A=
 		</data>
 		<key>SofView.nib</key>
 		<data>
-		KQWVGHYeHdoDXpGXuVqdvCt5Ikk=
+		IDq70gLGc0NYhvoWBXnMUE6kohA=
 		</data>
 		<key>SourceBankWalletView.nib</key>
 		<data>
@@ -658,7 +678,7 @@
 		</data>
 		<key>SplashScreenViewController.nib</key>
 		<data>
-		onOy8cZW3U9YDe1Ge4B9wG68FHs=
+		kllQD4uiJ31DOUxb7A7kXNaeCyI=
 		</data>
 		<key>SupportCollectionImagesCell.nib</key>
 		<data>
@@ -738,7 +758,7 @@
 		</data>
 		<key>SupportViewController.nib</key>
 		<data>
-		YV2/OnKc9GsBXvnoTMdtSNMimwc=
+		VAakLNf2asPtSK0GJzFDD+Pf4oA=
 		</data>
 		<key>SupportWithIconAndPhoneCell.nib</key>
 		<data>
@@ -751,6 +771,10 @@
 		<key>TitleTableCell.nib</key>
 		<data>
 		1c7DNrdUDCT0J/nXfC3zh/I+MX0=
+		</data>
+		<key>TitleTableViewCell.nib</key>
+		<data>
+		BaAUgWVzEdOGjiSBwbcbeDwK0yc=
 		</data>
 		<key>ToastLoadingView.nib</key>
 		<data>
@@ -902,7 +926,7 @@
 		</data>
 		<key>WalletBalanceSelectCell.nib</key>
 		<data>
-		ZcrPrHv2E4MhaC8aVx62PKbOu80=
+		YFoPsfxjLdSDrkuSFqxVgXiSDoA=
 		</data>
 		<key>WalletChildView.nib</key>
 		<data>
@@ -956,14 +980,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			c6C6kaboz2fOkdg0QFJsaedt3jCUmP8m182MVvFw46A=
+			XTKRZc4nURXt+1vxaPtUfmrFSQkuju1zU+d4aDRH7AA=
 			</data>
 		</dict>
 		<key>AddLinkBankViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vh8oiYNhBVZaR51Z82ue11U7xqL4UtcDy+iiHbFXVKI=
+			cEpucdMG5YWXmdxTp/i8sxHCHKN9Y5KDAxZbH1S1r4o=
 			</data>
 		</dict>
 		<key>AddLinkBankWebNormalViewController.nib</key>
@@ -991,7 +1015,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AVsS+dJzJYzr5bM16QETcFYErYSo1b5ZAZ1i2NIVvLk=
+			4j15Qh63DepBgoxDrdNrwycibifwgxdzTkEhZR/pV5g=
 			</data>
 		</dict>
 		<key>AlertNeedKycViewController.nib</key>
@@ -1012,14 +1036,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x0D9RVjRViXSbqB62OnkEuXIFUcRde/pxWtBIGL8YpU=
+			HllU14jC9Zk0+Y3x/vEi/wxvMCMPXTLXCSaBGlgZmeI=
 			</data>
 		</dict>
 		<key>BankSelectCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Npbh3dyWkN0zcaDBdAmsGF1MUjSRxjOMToPRNEXPkiU=
+			2YURf6a3E0uyk8NI+mW5au0Ax6KUGjnzx4xsdoJ5J5M=
 			</data>
 		</dict>
 		<key>BaseModalViewController.nib</key>
@@ -1068,7 +1092,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8CMSYsYdiS2zLOXlUc+MCgii3bHkj1LHDedfsaAf5cI=
+			hUXC7SBnfrKzurOpZ0DtGtuxMUgFH8hxnbkAkXzVnlg=
 			</data>
 		</dict>
 		<key>CameraDeniedView.nib</key>
@@ -1089,7 +1113,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fSvpSrZQgN9TNL4lkQEoS1AYoUkpw0hj57TvubhM7AI=
+			B2a56s0cf4UJNtf67FYj+mRZ/J3Zg/XRl/hWklUyHSY=
 			</data>
 		</dict>
 		<key>CardIconHorizontalGlobalCell.nib</key>
@@ -1215,7 +1239,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oQT/j3gHmLNHwou9WIbaZeR1kFISEbR0j2c6xIlWd0c=
+			17BnttNF/AwykmoUicwvWs0NySn6GH4r3//tYQej56Y=
 			</data>
 		</dict>
 		<key>CustomButtonView.nib</key>
@@ -1229,7 +1253,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KyGn+RVaVytRr0CF9az/TNm3WwMFuRHR853NgAvbZWY=
+			DI42GbA/+oVFmbqNphWhT+vAhZLcGBy425w1aK29EsI=
 			</data>
 		</dict>
 		<key>EKycViewController.nib</key>
@@ -1251,6 +1275,27 @@
 			<key>hash2</key>
 			<data>
 			oyDH99AFhsYCwfsnZgJwJ8QsrjyE7/doQllUQUBVgRE=
+			</data>
+		</dict>
+		<key>ExpandableHeaderCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			h8BUyjV8xmA72v8YT0yyJpR4BqSAdTt4pHi/r37cDvA=
+			</data>
+		</dict>
+		<key>ExpandableTableCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SQ8pGvBBkkA9/qsM2mwqJkJr6O0LRNw8WiRIDSlb8Oo=
+			</data>
+		</dict>
+		<key>ExpandableView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NJ53roJuiyi3bcQSuzF0M3D55pKle2jNHnaq1IPSMWw=
 			</data>
 		</dict>
 		<key>FunctionMenu.nib</key>
@@ -1285,14 +1330,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hz3wo5xtXbXdhAOZHPEWQqCgwUGndJcscOoIb6NrT58=
+			L5wE+OZcdkVjYSzXyeLDXmRvKttWaoGf1mDY0v6T4dQ=
 			</data>
 		</dict>
 		<key>Headers/GalaxyPaySDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pLf30VvONXHuawI+a+gT1onbGsUO5l79clBUcBSm1Yg=
+			bW9fFvoyXSab/vZVTlWBl1BRVjmaEu4FGC11ieprz4k=
 			</data>
 		</dict>
 		<key>Headers/GalaxyPaySDK.h</key>
@@ -1377,6 +1422,13 @@
 			<key>hash2</key>
 			<data>
 			8OMQGDQHoB1ph/PQ00by84Jp0YLilCqgA5kJrCLEM8M=
+			</data>
+		</dict>
+		<key>ImageFullScreenViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gDv9v6+26GBqtSDKLeNvqRcRXv1w3nRGcTAecnpZUkc=
 			</data>
 		</dict>
 		<key>ImagePreviewView.nib</key>
@@ -1558,7 +1610,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			87DiCLek+I75KAvhh22e3Eqifqp9g4gUHm5dVKZ5ZIo=
+			1k4CBsMTRaKbC38ZFdAmgf91yCh5gEwv1IVVhDN6fGo=
 			</data>
 		</dict>
 		<key>KycProcessingView.nib</key>
@@ -1580,6 +1632,13 @@
 			<key>hash2</key>
 			<data>
 			Pfd5tshh2oMgr0Em35WzEsrzF6ecq+/sK+atAJjAbxE=
+			</data>
+		</dict>
+		<key>KycVisaPhotosViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PD5wNPsbE+tKw8uWIu2DKd/I3Z32DVdP0lS11JIs0lQ=
 			</data>
 		</dict>
 		<key>LanguageViewController.nib</key>
@@ -1642,14 +1701,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BYxo+noRNf+jcWDJVZ5GhHe4iY5xs5TRoI6/dhQyJsQ=
+			IFjNVmsaw2pyRS/JZEBLs92di+P/axPvnU2P8dAEM44=
 			</data>
 		</dict>
 		<key>LinkedBankSectionCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sOv2Qnht3iCVvsVoCQdkoL29wwFnLZNh4/v06BwIRrg=
+			i6RBitTu8roKs4gOQzwtp8McaJzri1ZtSnJy3drNLMY=
 			</data>
 		</dict>
 		<key>LoadingTableViewCell.nib</key>
@@ -1712,35 +1771,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cobnpntfnaplvmyMlenTQ7scx4hrcOdjG8MoW90fMOI=
+			RU1mT2704MHiqZFHThfiExXa91E7Nwkg7igSFNqAdQk=
 			</data>
 		</dict>
 		<key>Modules/GalaxyPaySDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cGXvMCfovjKUsrO2FZ6urgHwK3aom54nikHXtq7b0LY=
+			EfyhOp/6i4U8AHGJdVVb+e8WM1SB5AW4WskAZPtvmgQ=
 			</data>
 		</dict>
 		<key>Modules/GalaxyPaySDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CyHtfwrtDvASih2mRtHjMLcRA5Q0IaFEq2bXSYp6eKA=
+			R/W4zN6F5ufGKYaNBwTBv+4msz50wQCSApeynahnPc8=
 			</data>
 		</dict>
 		<key>Modules/GalaxyPaySDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cGXvMCfovjKUsrO2FZ6urgHwK3aom54nikHXtq7b0LY=
+			EfyhOp/6i4U8AHGJdVVb+e8WM1SB5AW4WskAZPtvmgQ=
 			</data>
 		</dict>
 		<key>Modules/GalaxyPaySDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			61WxFZUKDrvryF9B432DZ7qPk5yUGl10YSOiD0fm07w=
+			Qo2dbkkNbkOjf86ujghZ7xBWibRyiiAwHuPuJBJgXf4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1768,7 +1827,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KZFxuwJsgv7Y0Ca2eyhYGgl8wb/sAuU+RtYn4wSduhI=
+			sYlasysueMUYT8GOrZEBGDMjMSuIQRtjuRFeTmC+E5k=
 			</data>
 		</dict>
 		<key>NavigationBarView.nib</key>
@@ -1859,7 +1918,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			opZcgBvCdWEma1jHfcnB9rWnOL+i5ypVITCOyUvdQEo=
+			Pb6stpjublXRHK/jFhE/fbke/eJ97FyuRV3qJpi6bKU=
 			</data>
 		</dict>
 		<key>PaymentMethodsCell.nib</key>
@@ -1887,14 +1946,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EdN61n19x/XVvjTQdaQHLMlA36wtqXsIuu3Nhrqd3CU=
+			vrUwo4A/Qk0yG71iLLYEIJmQUI0VTK5El9n/7zjwABo=
 			</data>
 		</dict>
 		<key>PhotoCollectionViewCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MpY9O+ak3mFLsAjdXIuOghM2ne0Gkr+rPbW29rrTChk=
+			RPBcxSwDt1pvOYtoYRE0b1HyCQMz8Pv29C0dQdiIOB8=
 			</data>
 		</dict>
 		<key>PickProviderCell.nib</key>
@@ -1908,7 +1967,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			F4mHur0EyvHmto8X6yh2hGAzo5+CfV23qf+isDX7ktQ=
+			kCyThasvJCzX8bhAuY8DhTTfJ0o2HTwn934wTqtaMN0=
 			</data>
 		</dict>
 		<key>PopupFunctionInDevelop.nib</key>
@@ -1964,21 +2023,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			n2bjF8ehjBvjOSg2cQYzLMDaB8SHUXLb7dB8HPprl7U=
+			AMD70ywIx8qUeb8PCtWv8Nx2/E0ufqh/vC8FSQ60I4c=
 			</data>
 		</dict>
 		<key>QROrderInformationViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			l3S9sXBhUz56u6PQYF0VoI2GyCWTC6o8HF2+qWAewY0=
+			VxMhGVXv2UoeOFTnE44SRehnF7vgJdtLR8++EqwsSSE=
 			</data>
 		</dict>
 		<key>QRViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mftRxQB/OarMcB0PZvOGP4RJGiBgRzmxZ37kDQ5Wq7o=
+			3n6jUQ7KrEJyGj7irp+sZpMel5fLIC1Nc80ns3k9ig0=
 			</data>
 		</dict>
 		<key>QrPaymentView.nib</key>
@@ -2048,14 +2107,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lz0DbR4bfVtjTqqzXx1I9B+643bsI7nSBaLAa6kuWAc=
+			LRzjIMae8eqaLXcaYYdq3d3kZPwA/lExCVXPlw5YjT8=
 			</data>
 		</dict>
 		<key>SofView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TXhkCr0WCOXkXopfxGNrhQqIrw9xOO7f6AnSzmUC+WQ=
+			0A/3ChoUOaDVD1pKAji8B1T8f63rF7MMkr25TUoVJsY=
 			</data>
 		</dict>
 		<key>SourceBankWalletView.nib</key>
@@ -2069,7 +2128,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tle2w+EaoYbKJ+shfIRsty9lDQNtmH2uNtiD3RFntgU=
+			U9N2AYh/lFfBLhH+w+xpZxqzQBVHJ4C9shSLlxEbbuo=
 			</data>
 		</dict>
 		<key>SupportCollectionImagesCell.nib</key>
@@ -2209,7 +2268,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DUqQ/F9i3JCVhp64IYJSI2Di9v0iquuUptfSyrPb1nE=
+			LgkDZAexUbW+yu7hmAgG7RfyRB3SHDcvTKDrGMORJLE=
 			</data>
 		</dict>
 		<key>SupportWithIconAndPhoneCell.nib</key>
@@ -2231,6 +2290,13 @@
 			<key>hash2</key>
 			<data>
 			MPt5n9mmazOSW37A7uNXAiVvfuoqfjeTn3lvyeTYAug=
+			</data>
+		</dict>
+		<key>TitleTableViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XPAIeHhB5EGb/izorCy5zRYeMmKIGc5/HIkl96onTfc=
 			</data>
 		</dict>
 		<key>ToastLoadingView.nib</key>
@@ -2496,7 +2562,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			K7OQknyQwO3qadSNbmq8q7J2AGficXbvTxwYNlmd7pw=
+			gj07DksUi2wAj5zHVco21OifX3G4x5bBTaOS7YTlMgk=
 			</data>
 		</dict>
 		<key>WalletChildView.nib</key>

@@ -484,13 +484,6 @@ SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 
 SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 @interface IQKeyboardManager (SWIFT_EXTENSION(GalaxyPaySDK))
-/// reloadInputViews to reload toolbar buttons enable/disable state on the fly Enhancement ID #434.
-- (void)reloadInputViews;
-@end
-
-
-SWIFT_AVAILABILITY(ios_app_extension,unavailable)
-@interface IQKeyboardManager (SWIFT_EXTENSION(GalaxyPaySDK))
 @property (nonatomic) BOOL enableDebugging;
 /// @warning Use below methods to completely enable/disable notifications registered by library internally.
 /// Please keep in mind that library is totally dependent on NSNotification of UITextField, UITextField, Keyboard etc.
@@ -498,6 +491,13 @@ SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 /// You should use below methods at your own risk.
 - (void)registerAllNotifications;
 - (void)unregisterAllNotifications;
+@end
+
+
+SWIFT_AVAILABILITY(ios_app_extension,unavailable)
+@interface IQKeyboardManager (SWIFT_EXTENSION(GalaxyPaySDK))
+/// reloadInputViews to reload toolbar buttons enable/disable state on the fly Enhancement ID #434.
+- (void)reloadInputViews;
 @end
 
 
@@ -672,6 +672,7 @@ SWIFT_CLASS("_TtC12GalaxyPaySDK9IQToolbar") SWIFT_AVAILABILITY(ios_app_extension
 
 
 
+
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
@@ -816,6 +817,7 @@ SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 /// To set customized distance from keyboard for textField/textView. Can’t be less than zero
 @property (nonatomic) BOOL shouldRestoreScrollViewContentOffset;
 @end
+
 
 
 
