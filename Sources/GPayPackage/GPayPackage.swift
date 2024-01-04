@@ -20,9 +20,6 @@ public class GPayPackage: NSObject {
         return Self.instance!
     }
     
-    let client = ClientConnection.usingPlatformAppropriateTLS(for: MultiThreadedEventLoopGroup(numberOfThreads: 1))
-        .connect(host: "https://tempo-us-central1.grafana.net", port: 443)
-    
     var otlpTraceExporter: OtlpTraceExporter
     
     let tracer = OpenTelemetry.instance.tracerProvider.get(instrumentationName: "OTel Application", instrumentationVersion: "1.0.0")
@@ -31,6 +28,10 @@ public class GPayPackage: NSObject {
         print("init GPayPackage")
         let basicAuth = GPay.shared.getOpenTelemetryAuth()
         print("basicAuth::::\(basicAuth)")
+        
+        let client = ClientConnection.usingPlatformAppropriateTLS(for: MultiThreadedEventLoopGroup(numberOfThreads: 1))
+            .connect(host: "tempo-us-central1.grafana.net", port: 10010)
+        
         self.otlpTraceExporter = OtlpTraceExporter(
             channel: client,
             config: OtlpConfiguration(
@@ -134,7 +135,13 @@ struct SDKLogIdGenerator: IdGenerator {
 
     public func generateTraceId() -> TraceId {
         let curentDate = Date().getFormattedDate(format: "yyyyMMddHHmmss")
-        return TraceId(fromHexString: curentDate)
+        var idHi: UInt64
+        var idLo: UInt64
+        repeat {
+            idHi = UInt64.random(in: .min ... .max)
+            idLo = UInt64.random(in: .min ... .max)
+        } while idHi == TraceId.invalidId && idLo == TraceId.invalidId
+        return TraceId(idHi: idHi, idLo: idLo)
     }
 }
 
