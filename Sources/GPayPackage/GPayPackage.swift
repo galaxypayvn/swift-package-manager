@@ -21,7 +21,7 @@ public class GPayPackage: NSObject {
     }
     
     let client = ClientConnection.usingPlatformAppropriateTLS(for: MultiThreadedEventLoopGroup(numberOfThreads: 1))
-        .connect(host: "tempo-us-central1.grafana.net", port: 443)
+        .connect(host: "https://tempo-us-central1.grafana.net", port: 443)
     
     var otlpTraceExporter: OtlpTraceExporter
     
@@ -50,7 +50,7 @@ public class GPayPackage: NSObject {
             tracerProvider: TracerProviderBuilder().add(spanProcessor: spanProcessor).with(
                 resource: Resource(
                     attributes:[
-                        ResourceAttributes.serviceName.rawValue: AttributeValue.string("${service}")
+                        ResourceAttributes.serviceName.rawValue: AttributeValue.string("VIETJET_APP_UAT_1.9.1")
                     ]
                 )
             )
