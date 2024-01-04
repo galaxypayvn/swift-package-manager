@@ -45,8 +45,6 @@ public class GPayPackage: NSObject {
                 ("Authorization", "Basic \(basicAuth)")
             ]
         ))
-        
-        print("handlerLogging otlpTraceExporter::: \(self.otlpTraceExporter)")
              
         let spanExporters = MultiSpanExporter(spanExporters: [StdoutExporter(isDebug: true), otlpTraceExporter])
         let spanProcessor = BatchSpanProcessor(spanExporter: spanExporters)
@@ -153,7 +151,8 @@ struct SDKLogIdGenerator: IdGenerator {
             idHi = UInt64.random(in: .min ... .max)
             idLo = UInt64.random(in: .min ... .max)
         } while idHi == TraceId.invalidId && idLo == TraceId.invalidId
-        return TraceId(idHi: idHi, idLo: idLo)
+        let hexString = String(format: "%016llx%016llx", curentDate)
+        return TraceId(fromHexString: hexString)
     }
 }
 
