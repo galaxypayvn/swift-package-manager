@@ -29,18 +29,20 @@ public class GPayPackage: NSObject {
         let basicAuth = GPay.shared.getOpenTelemetryAuth()
         print("basicAuth::::\(basicAuth)")
         
-        let client = ClientConnection.usingPlatformAppropriateTLS(for: MultiThreadedEventLoopGroup(numberOfThreads: 1))
-            .connect(host: "tempo-us-central1.grafana.net", port: 10010)
-        
-        self.otlpTraceExporter = OtlpTraceExporter(
-            channel: client,
-            config: OtlpConfiguration(
-                timeout: OtlpConfiguration.DefaultTimeoutInterval,
-                headers: [
-                    ("Authorization", "Basic \(basicAuth)")
-                ]
+        let grpcChannel = ClientConnection(
+            configuration: ClientConnection.Configuration.default(
+                target: .hostAndPort("https://tempo-us-central1.grafana.net", 443),
+                eventLoopGroup: MultiThreadedEventLoopGroup(numberOfThreads: 1)
             )
         )
+        
+        self.otlpTraceExporter = OtlpTraceExporter(channel: grpcChannel, config: OtlpConfiguration(
+            timeout: OtlpConfiguration.DefaultTimeoutInterval,
+            headers: [
+                ("Authorization", "Basic \(basicAuth)")
+            ]
+        ))
+                                                   
         super.init()
         
 //         Initialize the tracer provider. The tracer provider is used to expose major API operations, preprocess spans, and configure custom clocks.
