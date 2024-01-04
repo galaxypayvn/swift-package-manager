@@ -39,7 +39,7 @@ public class GPayPackage: NSObject {
         self.otlpTraceExporter = OtlpTraceExporter(channel: grpcChannel, config: OtlpConfiguration(
             timeout: OtlpConfiguration.DefaultTimeoutInterval,
             headers: [
-                ("Authorization", "Basic \(basicAuth)")
+                ("Authentication", "\(basicAuth)")
             ]
         ))
                                                    
@@ -75,7 +75,7 @@ public class GPayPackage: NSObject {
             callback(isInValidData, transactionStatus, isBackFromHomePage, isFlowComplete, isTokenExpired)
         })
         GPay.shared.broadcastLogInfo(callback: { view, sdkVersion, env in
-            DispatchQueue.main.async {
+            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(300)) {
                 var info = userInfo
                 info["view"] = view
                 info["SDK_Version"] = sdkVersion
