@@ -31,7 +31,7 @@ public class GPayPackage: NSObject {
         
         let grpcChannel = ClientConnection(
             configuration: ClientConnection.Configuration.default(
-                target: .hostAndPort("https://tempo-us-central1.grafana.net", 443),
+                target: .hostAndPort("tempo-us-central1.grafana.net", 443),
                 eventLoopGroup: MultiThreadedEventLoopGroup(numberOfThreads: 1)
             )
         )
@@ -42,11 +42,7 @@ public class GPayPackage: NSObject {
                 ("Authentication", "\(basicAuth)")
             ]
         ))
-                                                   
-        super.init()
-        
-//         Initialize the tracer provider. The tracer provider is used to expose major API operations, preprocess spans, and configure custom clocks.
-//         Configure the custom rules that are used to generate trace IDs and span IDs and configure custom samplers. You can configure the settings based on your business requirements.
+             
         let spanExporters = MultiSpanExporter(spanExporters: [StdoutExporter(isDebug: true), otlpTraceExporter])
         let spanProcessor = BatchSpanProcessor(spanExporter: spanExporters)
         OpenTelemetry.registerTracerProvider(
@@ -60,6 +56,11 @@ public class GPayPackage: NSObject {
             .with(idGenerator: SDKLogIdGenerator())
             .build()
         )
+        
+        super.init()
+//         Initialize the tracer provider. The tracer provider is used to expose major API operations, preprocess spans, and configure custom clocks.
+//         Configure the custom rules that are used to generate trace IDs and span IDs and configure custom samplers. You can configure the settings based on your business requirements.
+        
 //        OpenTelemetry.registerPropagators(textPropagators: [TextMapPropagator], baggagePropagator: <#T##TextMapBaggagePropagator#>)
 
         // Configure other instrumentation collectors based on your business requirements. The following configuration is used to collect data from the NSUrlSession network library.
@@ -75,7 +76,7 @@ public class GPayPackage: NSObject {
             callback(isInValidData, transactionStatus, isBackFromHomePage, isFlowComplete, isTokenExpired)
         })
         GPay.shared.broadcastLogInfo(callback: { view, sdkVersion, env in
-            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(300)) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
                 var info = userInfo
                 info["view"] = view
                 info["SDK_Version"] = sdkVersion
