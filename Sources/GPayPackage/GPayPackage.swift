@@ -30,6 +30,7 @@ public class GPayPackage: NSObject {
     public override init() {
         print("init GPayPackage")
         let basicAuth = GPay.shared.getOpenTelemetryAuth()
+        print("basicAuth::::\(basicAuth)")
         self.otlpTraceExporter = OtlpTraceExporter(
             channel: client,
             config: OtlpConfiguration(
@@ -71,22 +72,23 @@ public class GPayPackage: NSObject {
             callback(isInValidData, transactionStatus, isBackFromHomePage, isFlowComplete, isTokenExpired)
         })
         GPay.shared.broadcastLogInfo(callback: { view, sdkVersion, env in
-            var info = userInfo
-            info["view"] = view
-            info["SDK_Version"] = sdkVersion
-            info["env"] = sdkVersion
-            self.handlerLogging(info)
+            DispatchQueue.main.async {
+                var info = userInfo
+                info["view"] = view
+                info["SDK_Version"] = sdkVersion
+                info["env"] = sdkVersion
+                self.handlerLogging(info)
+            }
         })
     }
     
     func handlerLogging(_ userInfo: [String: String]) {
-        print("handlerLogging:::\(userInfo)")
         if let view = userInfo["view"], view.trimmingCharacters(in: .whitespacesAndNewlines) != "",
         let phone = userInfo["phone"], phone.trimmingCharacters(in: .whitespacesAndNewlines) != "",
         let language = userInfo["language"], language.trimmingCharacters(in: .whitespacesAndNewlines) != "",
         let tenant = userInfo["tenantId"], tenant.trimmingCharacters(in: .whitespacesAndNewlines) != "",
         let sdkVersion = userInfo["SDK_Version"], sdkVersion.trimmingCharacters(in: .whitespacesAndNewlines) != "",
-        let env = userInfo["Env"], env.trimmingCharacters(in: .whitespacesAndNewlines) != ""
+        let env = userInfo["env"], env.trimmingCharacters(in: .whitespacesAndNewlines) != ""
         {
             let span = self.tracer.spanBuilder(spanName: view).startSpan()
             span.setAttribute(key: "Phone", value: phone)
@@ -96,6 +98,8 @@ public class GPayPackage: NSObject {
             span.setAttribute(key: "Env", value: env)
             span.setAttribute(key: "X-OS", value: "iOS")
             span.end()
+            print("handlerLogging:::\(userInfo)")
+            print("handlerLogging span:::\(span)")
         }
     }
 }
