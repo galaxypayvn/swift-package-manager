@@ -151,7 +151,7 @@ struct SDKLogIdGenerator: IdGenerator {
 //            idHi = UInt64.random(in: .min ... .max)
 //            idLo = curentDate.uint64
 //        } while idHi == TraceId.invalidId && idLo == TraceId.invalidId
-        let hexString = String(format: "%016llx%016llx", curentDate.longLongValue)
+        let hexString = String(format: "X", curentDate.longLongValue)
 //        print("generateTraceId:::\(idLo)")
         return TraceId(fromHexString: hexString)
     }
