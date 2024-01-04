@@ -22,7 +22,7 @@ public class GPayPackage: NSObject {
     
     var otlpTraceExporter: OtlpTraceExporter
     
-    let tracer = OpenTelemetry.instance.tracerProvider.get(instrumentationName: "OTel Application", instrumentationVersion: "1.0.0")
+    let tracer: Tracer
 
     public override init() {
         print("init GPayPackage")
@@ -31,7 +31,7 @@ public class GPayPackage: NSObject {
         
         let grpcChannel = ClientConnection(
             configuration: ClientConnection.Configuration.default(
-                target: .hostAndPort("tempo-us-central1.grafana.net", 443),
+                target: .hostAndPort("https://tempo-us-central1.grafana.net", 443),
                 eventLoopGroup: MultiThreadedEventLoopGroup(numberOfThreads: 1)
             )
         )
@@ -39,7 +39,7 @@ public class GPayPackage: NSObject {
         self.otlpTraceExporter = OtlpTraceExporter(channel: grpcChannel, config: OtlpConfiguration(
             timeout: OtlpConfiguration.DefaultTimeoutInterval,
             headers: [
-                ("Authentication", "\(basicAuth)")
+                ("Authorization", "Basic \(basicAuth)")
             ]
         ))
              
@@ -49,13 +49,16 @@ public class GPayPackage: NSObject {
             tracerProvider: TracerProviderBuilder().add(spanProcessor: spanProcessor).with(
                 resource: Resource(
                     attributes:[
-                        ResourceAttributes.serviceName.rawValue: AttributeValue.string("VIETJET_APP_UAT_1.9.1")
+                        ResourceAttributes.serviceName.rawValue: AttributeValue.string("VIETJET_APP_UAT_1.9.1"),
+                        ResourceAttributes.hostName.rawValue: AttributeValue.string("https://tempo-us-central1.grafana.net")
                     ]
                 )
             )
             .with(idGenerator: SDKLogIdGenerator())
             .build()
         )
+        
+        tracer = OpenTelemetry.instance.tracerProvider.get(instrumentationName: "OTel Application", instrumentationVersion: "1.0.0")
         
         super.init()
 //         Initialize the tracer provider. The tracer provider is used to expose major API operations, preprocess spans, and configure custom clocks.
