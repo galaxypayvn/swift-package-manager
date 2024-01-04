@@ -29,12 +29,15 @@ public class GPayPackage: NSObject {
         let basicAuth = GPay.shared.getOpenTelemetryAuth()
         print("basicAuth::::\(basicAuth)")
         
-        let grpcChannel = ClientConnection(
-            configuration: ClientConnection.Configuration.default(
-                target: .hostAndPort("tempo-us-central1.grafanadddddd.net", 443),
-                eventLoopGroup: MultiThreadedEventLoopGroup(numberOfThreads: 1)
-            )
-        )
+        let grpcChannel = ClientConnection.usingPlatformAppropriateTLS(for: MultiThreadedEventLoopGroup(numberOfThreads:1))
+            .connect(host: "tempo-us-central1.grafana.net", port: 443)
+        
+//        let grpcChannel = ClientConnection(
+//            configuration: ClientConnection.Configuration.default(
+//                target: .hostAndPort("tempo-us-central1.grafana.net", 443),
+//                eventLoopGroup: MultiThreadedEventLoopGroup(numberOfThreads: 1)
+//            )
+//        )
         
         self.otlpTraceExporter = OtlpTraceExporter(channel: grpcChannel, config: OtlpConfiguration(
             timeout: OtlpConfiguration.DefaultTimeoutInterval,
@@ -42,6 +45,8 @@ public class GPayPackage: NSObject {
                 ("Authorization", "Basic \(basicAuth)")
             ]
         ))
+        
+        print("handlerLogging otlpTraceExporter::: \(self.otlpTraceExporter)")
              
         let spanExporters = MultiSpanExporter(spanExporters: [StdoutExporter(isDebug: true), otlpTraceExporter])
         let spanProcessor = BatchSpanProcessor(spanExporter: spanExporters)
