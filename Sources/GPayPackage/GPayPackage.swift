@@ -76,7 +76,7 @@ public class GPayPackage: NSObject {
                 var info = userInfo
                 info["view"] = view
                 info["SDK_Version"] = sdkVersion
-                info["env"] = sdkVersion
+                info["env"] = env
                 self.handlerLogging(info)
             }
         })
