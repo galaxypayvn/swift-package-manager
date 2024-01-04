@@ -31,7 +31,7 @@ public class GPayPackage: NSObject {
         
         let grpcChannel = ClientConnection(
             configuration: ClientConnection.Configuration.default(
-                target: .hostAndPort("https://tempo-us-central1.grafana.net", 443),
+                target: .hostAndPort("tempo-us-central1.grafana.net", 10010),
                 eventLoopGroup: MultiThreadedEventLoopGroup(numberOfThreads: 1)
             )
         )
@@ -58,7 +58,7 @@ public class GPayPackage: NSObject {
             .build()
         )
         
-        tracer = OpenTelemetry.instance.tracerProvider.get(instrumentationName: "OTel Application", instrumentationVersion: "1.0.0")
+        tracer = OpenTelemetry.instance.tracerProvider.get(instrumentationName: "VIETJET_APP", instrumentationVersion: "1.9.1")
         
         super.init()
 //         Initialize the tracer provider. The tracer provider is used to expose major API operations, preprocess spans, and configure custom clocks.
