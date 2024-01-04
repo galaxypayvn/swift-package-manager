@@ -31,16 +31,16 @@ public class GPayPackage: NSObject {
         
         let grpcChannel = ClientConnection(
             configuration: ClientConnection.Configuration.default(
-                target: .hostAndPort("tempo-us-central1.grafana.net", 443),
+                target: .hostAndPort("tempo-us-central1.grafanadddddd.net", 443),
                 eventLoopGroup: MultiThreadedEventLoopGroup(numberOfThreads: 1)
             )
         )
         
         self.otlpTraceExporter = OtlpTraceExporter(channel: grpcChannel, config: OtlpConfiguration(
-            timeout: OtlpConfiguration.DefaultTimeoutInterval
-//            headers: [
-//                ("Authorization", "Basic \(basicAuth)")
-//            ]
+            timeout: OtlpConfiguration.DefaultTimeoutInterval,
+            headers: [
+                ("Authorization", "Basic \(basicAuth)")
+            ]
         ))
              
         let spanExporters = MultiSpanExporter(spanExporters: [StdoutExporter(isDebug: true), otlpTraceExporter])
