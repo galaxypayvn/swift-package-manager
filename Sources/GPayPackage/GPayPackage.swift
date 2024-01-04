@@ -145,6 +145,7 @@ struct SDKLogIdGenerator: IdGenerator {
 
     public func generateTraceId() -> TraceId {
         let curentDate = Date().getFormattedDate(format: "yyyyMMddHHmmss") as NSString
+        print("generateTraceId:::\(curentDate.longLongValue)")
         var idHi: UInt64
         var idLo: UInt64
         repeat {
