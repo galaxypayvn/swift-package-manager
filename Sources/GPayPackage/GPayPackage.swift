@@ -144,15 +144,15 @@ struct SDKLogIdGenerator: IdGenerator {
     }
 
     public func generateTraceId() -> TraceId {
-        let curentDate = Date().getFormattedDate(format: "yyyyMMddHHmmss")
+        let curentDate = Date().getFormattedDate(format: "yyyyMMddHHmmss") as NSString
         var idHi: UInt64
         var idLo: UInt64
         repeat {
             idHi = UInt64.random(in: .min ... .max)
-            idLo = UInt64.random(in: .min ... .max)
+            idLo = UInt64(bitPattern: curentDate.longLongValue)
         } while idHi == TraceId.invalidId && idLo == TraceId.invalidId
-        let hexString = String(format: "yyyyMMddHHmmss", curentDate)
-        return TraceId(fromHexString: hexString)
+        let hexString = String(format: "%016llx%016llx", curentDate)
+        return TraceId(idHi: idHi, idLo: idLo)
     }
 }
 
