@@ -49,7 +49,7 @@ public class GPayPackage: NSObject {
             tracerProvider: TracerProviderBuilder().add(spanProcessor: spanProcessor).with(
                 resource: Resource(
                     attributes:[
-                        ResourceAttributes.serviceName.rawValue: AttributeValue.string("VIETJET_APP_UAT_1.9.1"),
+                        ResourceAttributes.serviceName.rawValue: AttributeValue.string("GALAXYPAY_APP_UAT_1.9.1"),
                         ResourceAttributes.hostName.rawValue: AttributeValue.string("https://tempo-us-central1.grafana.net")
                     ]
                 )
@@ -79,7 +79,7 @@ public class GPayPackage: NSObject {
             callback(isInValidData, transactionStatus, isBackFromHomePage, isFlowComplete, isTokenExpired)
         })
         GPay.shared.broadcastLogInfo(callback: { view, sdkVersion, env in
-            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
+            DispatchQueue.main.asyncAfter(deadline: .now()) {
                 var info = userInfo
                 info["view"] = view
                 info["SDK_Version"] = sdkVersion

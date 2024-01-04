@@ -22,7 +22,7 @@
 		</data>
 		<key>AddLinkBankViewController.nib</key>
 		<data>
-		BYs6r7H5UcRA/doDyJJBw0kVJ5w=
+		CCDvr/tbwjp9FN00mgpIiJ51gWk=
 		</data>
 		<key>AddLinkBankWebNormalViewController.nib</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>BillingPickProviderViewController.nib</key>
 		<data>
-		Ofg6hNk1JJJnjcaX/rsoVEpgkzk=
+		9BRaJqjGFb+LmGBLTVbRJ4+YRvw=
 		</data>
 		<key>CameraDeniedView.nib</key>
 		<data>
@@ -218,7 +218,7 @@
 		</data>
 		<key>HDBankOTPInputView.nib</key>
 		<data>
-		PwkVRd4zmqS1VM7CNFQW668GTXI=
+		FrGGmxpAhm+PnmQwdJBOOoGNh5k=
 		</data>
 		<key>Headers/GalaxyPaySDK-Swift.h</key>
 		<data>
@@ -382,7 +382,7 @@
 		</data>
 		<key>KycInformationView.nib</key>
 		<data>
-		cha9z09JBKePymHZ6hArRN8U9m4=
+		hcfsAldK5wqesBtVCBUGEQ56V3c=
 		</data>
 		<key>KycProcessingView.nib</key>
 		<data>
@@ -474,7 +474,7 @@
 		</data>
 		<key>Modules/GalaxyPaySDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Bl/1e/C5pGRSCDoXSY2UFtqP8OY=
+		5c5l3m3qvEAO0q+zrJ5RrGUd7Ik=
 		</data>
 		<key>Modules/GalaxyPaySDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -490,7 +490,7 @@
 		</data>
 		<key>Modules/GalaxyPaySDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		FkE6Wq7kAPwMoGQGT+uJq1759zM=
+		zXJTg2QO5TY0l5xMSg6fyMsORqY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -622,7 +622,7 @@
 		</data>
 		<key>QROrderInformationViewController.nib</key>
 		<data>
-		QKUuHg5H8wEIUZUxvLix7e9X6kY=
+		9CXKBhaJoPsbBjOSkcO8FCZJSi8=
 		</data>
 		<key>QRViewController.nib</key>
 		<data>
@@ -987,7 +987,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cEpucdMG5YWXmdxTp/i8sxHCHKN9Y5KDAxZbH1S1r4o=
+			Vh8oiYNhBVZaR51Z82ue11U7xqL4UtcDy+iiHbFXVKI=
 			</data>
 		</dict>
 		<key>AddLinkBankWebNormalViewController.nib</key>
@@ -1092,7 +1092,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hUXC7SBnfrKzurOpZ0DtGtuxMUgFH8hxnbkAkXzVnlg=
+			8CMSYsYdiS2zLOXlUc+MCgii3bHkj1LHDedfsaAf5cI=
 			</data>
 		</dict>
 		<key>CameraDeniedView.nib</key>
@@ -1330,7 +1330,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L5wE+OZcdkVjYSzXyeLDXmRvKttWaoGf1mDY0v6T4dQ=
+			DAYwp5oayxJe7nxzCzwJsIeaFykyDdlRmfNxfvYLQFk=
 			</data>
 		</dict>
 		<key>Headers/GalaxyPaySDK-Swift.h</key>
@@ -1610,7 +1610,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1k4CBsMTRaKbC38ZFdAmgf91yCh5gEwv1IVVhDN6fGo=
+			gndFRdi9lWf9RfCnZoYAS+ihTCMpjD+LPhSLOLdGgpo=
 			</data>
 		</dict>
 		<key>KycProcessingView.nib</key>
@@ -1771,7 +1771,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RU1mT2704MHiqZFHThfiExXa91E7Nwkg7igSFNqAdQk=
+			Ni8lTGP1PjSWADZ2Mo2PAxmf7LjMEj/vLZHei1qgR2w=
 			</data>
 		</dict>
 		<key>Modules/GalaxyPaySDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -1799,7 +1799,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qo2dbkkNbkOjf86ujghZ7xBWibRyiiAwHuPuJBJgXf4=
+			DgA5DAJde5sYyf0LqWfGo5r7YeNEAzzoNz97PvNc2SI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -2030,7 +2030,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VxMhGVXv2UoeOFTnE44SRehnF7vgJdtLR8++EqwsSSE=
+			H/OlIVq8HCEW5qhFQHX6fvkjTskiUtvv/TppZP81nHU=
 			</data>
 		</dict>
 		<key>QRViewController.nib</key>
