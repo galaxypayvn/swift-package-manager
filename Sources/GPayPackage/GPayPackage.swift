@@ -20,7 +20,7 @@ public class GPayPackage: NSObject {
         return Self.instance!
     }
     
-//    var otlpTraceExporter: OtlpTraceExporter
+    var otlpTraceExporter: OtlpTraceExporter
     
     let tracer: Tracer
 
@@ -29,34 +29,34 @@ public class GPayPackage: NSObject {
         let basicAuth = GPay.shared.getOpenTelemetryAuth()
         print("basicAuth::::\(basicAuth)")
         
-//        let grpcChannel = ClientConnection(
-//            configuration: ClientConnection.Configuration.default(
-//                target: .hostAndPort("https://tempo-us-central1.grafana.net", 443),
-//                eventLoopGroup: MultiThreadedEventLoopGroup(numberOfThreads: 1)
-//            )
-//        )
-//
-//        self.otlpTraceExporter = OtlpTraceExporter(channel: grpcChannel, config: OtlpConfiguration(
-//            timeout: OtlpConfiguration.DefaultTimeoutInterval,
-//            headers: [
-//                ("Authorization", "Basic \(basicAuth)")
-//            ]
-//        ))
-//
-//        let spanExporters = MultiSpanExporter(spanExporters: [StdoutExporter(isDebug: true), otlpTraceExporter])
-//        let spanProcessor = BatchSpanProcessor(spanExporter: spanExporters)
-//        OpenTelemetry.registerTracerProvider(
-//            tracerProvider: TracerProviderBuilder().add(spanProcessor: spanProcessor).with(
-//                resource: Resource(
-//                    attributes:[
-//                        ResourceAttributes.serviceName.rawValue: AttributeValue.string("GALAXYPAY_APP_1.9.1"),
-//                        ResourceAttributes.hostName.rawValue: AttributeValue.string("https://tempo-us-central1.grafana.net")
-//                    ]
-//                )
-//            )
-//            .with(idGenerator: SDKLogIdGenerator())
-//            .build()
-//        )
+        let grpcChannel = ClientConnection(
+            configuration: ClientConnection.Configuration.default(
+                target: .hostAndPort("https://tempo-us-central1.grafana.net", 443),
+                eventLoopGroup: MultiThreadedEventLoopGroup(numberOfThreads: 1)
+            )
+        )
+        
+        self.otlpTraceExporter = OtlpTraceExporter(channel: grpcChannel, config: OtlpConfiguration(
+            timeout: OtlpConfiguration.DefaultTimeoutInterval,
+            headers: [
+                ("Authorization", "Basic \(basicAuth)")
+            ]
+        ))
+             
+        let spanExporters = MultiSpanExporter(spanExporters: [StdoutExporter(isDebug: true), otlpTraceExporter])
+        let spanProcessor = BatchSpanProcessor(spanExporter: spanExporters)
+        OpenTelemetry.registerTracerProvider(
+            tracerProvider: TracerProviderBuilder().add(spanProcessor: spanProcessor).with(
+                resource: Resource(
+                    attributes:[
+                        ResourceAttributes.serviceName.rawValue: AttributeValue.string("GALAXYPAY_APP_1.9.1"),
+                        ResourceAttributes.hostName.rawValue: AttributeValue.string("https://tempo-us-central1.grafana.net")
+                    ]
+                )
+            )
+            .with(idGenerator: SDKLogIdGenerator())
+            .build()
+        )
         
         tracer = OpenTelemetry.instance.tracerProvider.get(instrumentationName: "OTel Application", instrumentationVersion: "1.0.0")
         
