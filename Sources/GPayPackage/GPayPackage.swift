@@ -31,16 +31,16 @@ public class GPayPackage: NSObject {
         
         let grpcChannel = ClientConnection(
             configuration: ClientConnection.Configuration.default(
-                target: .hostAndPort("tempo-us-central1.grafana.net", 10010),
+                target: .hostAndPort("tempo-us-central1.grafana.net", 443),
                 eventLoopGroup: MultiThreadedEventLoopGroup(numberOfThreads: 1)
             )
         )
         
         self.otlpTraceExporter = OtlpTraceExporter(channel: grpcChannel, config: OtlpConfiguration(
-            timeout: OtlpConfiguration.DefaultTimeoutInterval,
-            headers: [
-                ("Authorization", "Basic \(basicAuth)")
-            ]
+            timeout: OtlpConfiguration.DefaultTimeoutInterval
+//            headers: [
+//                ("Authorization", "Basic \(basicAuth)")
+//            ]
         ))
              
         let spanExporters = MultiSpanExporter(spanExporters: [StdoutExporter(isDebug: true), otlpTraceExporter])
@@ -50,13 +50,14 @@ public class GPayPackage: NSObject {
                 resource: Resource(
                     attributes:[
                         ResourceAttributes.serviceName.rawValue: AttributeValue.string("GALAXYPAY_APP_1.9.1"),
-                        ResourceAttributes.hostName.rawValue: AttributeValue.string("https://tempo-us-central1.grafana.net")
+                        ResourceAttributes.hostName.rawValue: AttributeValue.string("tempo-us-central1.grafana.net:443")
                     ]
                 )
             )
             .with(idGenerator: SDKLogIdGenerator())
             .build()
         )
+//        OpenTelemetry.registerPropagators(textPropagators: [TextMapPropagator], baggagePropagator: <#T##TextMapBaggagePropagator#>)
         
         tracer = OpenTelemetry.instance.tracerProvider.get(instrumentationName: "VIETJET_APP", instrumentationVersion: "1.9.1")
         
@@ -64,7 +65,7 @@ public class GPayPackage: NSObject {
 //         Initialize the tracer provider. The tracer provider is used to expose major API operations, preprocess spans, and configure custom clocks.
 //         Configure the custom rules that are used to generate trace IDs and span IDs and configure custom samplers. You can configure the settings based on your business requirements.
         
-//        OpenTelemetry.registerPropagators(textPropagators: [TextMapPropagator], baggagePropagator: <#T##TextMapBaggagePropagator#>)
+//
 
         // Configure other instrumentation collectors based on your business requirements. The following configuration is used to collect data from the NSUrlSession network library.
 //        URLSessionInstrumentation(configuration: URLSessionInstrumentationConfiguration(
