@@ -167,6 +167,6 @@ extension Date {
 
 extension Data {
     var uint64: UInt64 {
-        withUnsafeBytes { $0.load(as: UInt64.self).littleEndian }
+        withUnsafeBytes { $0.load(as: UInt64.self) }
     }
 }
