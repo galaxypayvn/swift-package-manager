@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import TestTrueID
 
 public class GPMain {
     public func testPod() {
-        print("Test Pod")
+        MainTrueIDSDK.shared.showMainVC()
+//        print("Test Pod")
     }
 }
