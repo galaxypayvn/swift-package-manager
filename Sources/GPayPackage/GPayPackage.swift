@@ -52,7 +52,7 @@ public class GPayPackage: NSObject {
             tracerProvider: TracerProviderBuilder().add(spanProcessor: spanProcessor).with(
                 resource: Resource(
                     attributes:[
-                        ResourceAttributes.serviceName.rawValue: AttributeValue.string("GALAXYPAY_APP_1.9.1"),
+                        ResourceAttributes.serviceName.rawValue: AttributeValue.string("[IOS]GALAXYPAY_APP_1.9.1"),
                         ResourceAttributes.hostName.rawValue: AttributeValue.string("tempo-us-central1.grafana.net:443")
                     ]
                 )
