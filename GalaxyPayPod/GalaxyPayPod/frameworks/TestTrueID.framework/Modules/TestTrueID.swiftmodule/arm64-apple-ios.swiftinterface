@@ -14,5 +14,6 @@ import _StringProcessing
     get
   }
   public func showMainVC()
+  public func testSDK()
   @objc deinit
 }

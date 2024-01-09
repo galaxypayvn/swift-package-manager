@@ -11,6 +11,7 @@
 		B531D78B2B4CF87D00C07710 /* GPMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531D78A2B4CF87D00C07710 /* GPMain.swift */; };
 		B531D78E2B4D345700C07710 /* TestTrueID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B531D78D2B4D345700C07710 /* TestTrueID.framework */; platformFilter = ios; };
 		B531D78F2B4D345700C07710 /* TestTrueID.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B531D78D2B4D345700C07710 /* TestTrueID.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B531D79D2B4D459700C07710 /* TestTrueID.framework in Resources */ = {isa = PBXBuildFile; fileRef = B531D78D2B4D345700C07710 /* TestTrueID.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -151,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B531D79D2B4D459700C07710 /* TestTrueID.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -330,6 +333,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

@@ -136,4 +136,7 @@ Pod::Spec.new do |spec|
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
 
+  #spec.xcconfig = { 'VALID_ARCHS' => 'arm64' }
+  #spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
+  spec.vendored_frameworks  = "TestTrueID.framework"
 end

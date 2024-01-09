@@ -94,6 +94,27 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "testSDK",
+            "printedName": "testSDK()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10TestTrueID04MainB5IDSDKC7testSDKyyF",
+            "mangledName": "$s10TestTrueID04MainB5IDSDKC7testSDKyyF",
+            "moduleName": "TestTrueID",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -2141,14 +2162,14 @@
     {
       "filePath": "\/Users\/NhatKiem\/Desktop\/Projects\/TestTrueID\/TestTrueID\/TestTrueIdSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 571,
+      "offset": 642,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/NhatKiem\/Desktop\/Projects\/TestTrueID\/TestTrueID\/TestTrueIdSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 827,
+      "offset": 898,
       "length": 4,
       "value": "true"
     },
