@@ -146,6 +146,200 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TestTrueID",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Config",
+        "printedName": "Config",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "TrueIdEndPoint",
+            "printedName": "TrueIdEndPoint",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10TestTrueID6ConfigC0B10IdEndPointSSvpZ",
+            "mangledName": "$s10TestTrueID6ConfigC0B10IdEndPointSSvpZ",
+            "moduleName": "TestTrueID",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TestTrueID6ConfigC0B10IdEndPointSSvgZ",
+                "mangledName": "$s10TestTrueID6ConfigC0B10IdEndPointSSvgZ",
+                "moduleName": "TestTrueID",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "TrueIdClientID",
+            "printedName": "TrueIdClientID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10TestTrueID6ConfigC0b8IdClientC0SSvpZ",
+            "mangledName": "$s10TestTrueID6ConfigC0b8IdClientC0SSvpZ",
+            "moduleName": "TestTrueID",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TestTrueID6ConfigC0b8IdClientC0SSvgZ",
+                "mangledName": "$s10TestTrueID6ConfigC0b8IdClientC0SSvgZ",
+                "moduleName": "TestTrueID",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "TrueIdClientSecret",
+            "printedName": "TrueIdClientSecret",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10TestTrueID6ConfigC0B14IdClientSecretSSvpZ",
+            "mangledName": "$s10TestTrueID6ConfigC0B14IdClientSecretSSvpZ",
+            "moduleName": "TestTrueID",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TestTrueID6ConfigC0B14IdClientSecretSSvgZ",
+                "mangledName": "$s10TestTrueID6ConfigC0B14IdClientSecretSSvgZ",
+                "moduleName": "TestTrueID",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Config",
+                "printedName": "TestTrueID.Config",
+                "usr": "s:10TestTrueID6ConfigC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10TestTrueID6ConfigCACycfc",
+            "mangledName": "$s10TestTrueID6ConfigCACycfc",
+            "moduleName": "TestTrueID",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10TestTrueID6ConfigC",
+        "mangledName": "$s10TestTrueID6ConfigC",
+        "moduleName": "TestTrueID",
+        "isOpen": true
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -2177,9 +2371,30 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/NhatKiem\/Desktop\/Projects\/TestTrueID\/TestTrueID\/Extensions\/Config.swift",
+      "kind": "StringLiteral",
+      "offset": 155,
+      "length": 23,
+      "value": "\"https:\/\/api.trueid.ai\""
+    },
+    {
+      "filePath": "\/Users\/NhatKiem\/Desktop\/Projects\/TestTrueID\/TestTrueID\/Extensions\/Config.swift",
+      "kind": "StringLiteral",
+      "offset": 211,
+      "length": 34,
+      "value": "\"46e11da1ce3f9f231361fb574c6484b5\""
+    },
+    {
+      "filePath": "\/Users\/NhatKiem\/Desktop\/Projects\/TestTrueID\/TestTrueID\/Extensions\/Config.swift",
+      "kind": "StringLiteral",
+      "offset": 282,
+      "length": 46,
+      "value": "\"2+NxKn8UXBDK4OeTAvNBchIMaxOni2rC7r9iwJ3KWoc=\""
+    },
+    {
       "filePath": "\/Users\/NhatKiem\/Desktop\/Projects\/TestTrueID\/TestTrueID\/Views\/MainViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8628,
+      "offset": 8473,
       "length": 5,
       "value": "false"
     },
