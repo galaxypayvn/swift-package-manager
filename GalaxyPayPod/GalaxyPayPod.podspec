@@ -137,6 +137,16 @@ Pod::Spec.new do |spec|
   # spec.dependency "JSONKit", "~> 1.4"
 
   #spec.xcconfig = { 'VALID_ARCHS' => 'arm64' }
-  #spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
-  spec.vendored_frameworks  = "TestTrueID.framework"
+  #spec.preserve_paths = "GalaxyPayPod.framework/*"
+  spec.framework  = "TestTrueID"
+  #spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphones*]' => 'i386' }
+  #spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphones*]' => 'x86_64' }
+  #spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphones*]' => 'arm64' }
+  spec.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
+
+  #spec.xcconfig = {
+ #   'FRAMEWORK_SEARCH_PATH[sdk=iphoneos*]' => '$(inherited) "$(PODS_ROOT)/GalaxyPayPod"',
+#    'OTHERCFLAGS[sdk=iphoneos*]' => '$(inherited) -iframework "$(PODS_ROOT)/GalaxyPayPod"',
+ #   'OTHER_LDFLAGS[sdk=iphoneos*]' => '$(inherited) -framework GalaxyPayPod'
+ # }
 end

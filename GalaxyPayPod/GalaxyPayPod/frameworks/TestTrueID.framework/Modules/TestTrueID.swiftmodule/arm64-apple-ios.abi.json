@@ -159,7 +159,10 @@
         "name": "TrueIDSDK",
         "printedName": "TrueIDSDK",
         "declKind": "Import",
-        "moduleName": "TestTrueID"
+        "moduleName": "TestTrueID",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -2176,7 +2179,7 @@
     {
       "filePath": "\/Users\/NhatKiem\/Desktop\/Projects\/TestTrueID\/TestTrueID\/Views\/MainViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8607,
+      "offset": 8628,
       "length": 5,
       "value": "false"
     },

@@ -5,7 +5,6 @@
 import Foundation
 import Swift
 @_exported import TestTrueID
-import TrueIDSDK
 import UIKit
 import _Concurrency
 import _StringProcessing

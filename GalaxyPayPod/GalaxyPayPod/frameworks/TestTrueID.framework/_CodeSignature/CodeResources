@@ -10,7 +10,7 @@
 		</data>
 		<key>Frameworks/FaceTecSDK.framework/FaceTecSDK</key>
 		<data>
-		/W8w0vKnKF9sS3cDf/saXOEjzTI=
+		iypZc6ep4Ud+dUlcySdXRryJWEk=
 		</data>
 		<key>Frameworks/FaceTecSDK.framework/GenericGuidanceContentLayout.nib</key>
 		<data>
@@ -171,7 +171,7 @@
 		</data>
 		<key>Frameworks/FaceTrueIDSDK.framework/FaceTrueIDSDK</key>
 		<data>
-		VQIm6R9jmjAzmj9EmgQJfLawHhw=
+		16uMSgFyYRH9spEhX6Smn2rO9BE=
 		</data>
 		<key>Frameworks/FaceTrueIDSDK.framework/Info.plist</key>
 		<data>
@@ -316,7 +316,7 @@
 		</data>
 		<key>Frameworks/TrueIDSDK.framework/TrueIDSDK</key>
 		<data>
-		y4eJwY4rmqwP7ayzjCjQCRzspgo=
+		Zqo3CRs13LDFOkCcacYGbiD9DVw=
 		</data>
 		<key>Frameworks/TrueIDSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -353,15 +353,15 @@
 		</data>
 		<key>Modules/TestTrueID.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		KVcfHuryzoe26Aj/c6d0jsgZvzY=
+		D3y3lpgiPbsXHqvwSAYUuI2jjWw=
 		</data>
 		<key>Modules/TestTrueID.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		TKUZ9IKxFyKp03rympS1U+NyfWw=
+		llocir9wRptrKgxC19+ccGSveEU=
 		</data>
 		<key>Modules/TestTrueID.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		6oianD+vZ1X/nDijwsdqM3uizN4=
+		8Mr5XDfWO7sb4NkPV+hkCBeOCBU=
 		</data>
 		<key>Modules/TestTrueID.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -369,11 +369,11 @@
 		</data>
 		<key>Modules/TestTrueID.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		6oianD+vZ1X/nDijwsdqM3uizN4=
+		8Mr5XDfWO7sb4NkPV+hkCBeOCBU=
 		</data>
 		<key>Modules/TestTrueID.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		39yZNudWPNZFlJgo7TWfVvFwyX8=
+		RO1j3BTJ2NCYk1H7viJeM8XcT7k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -393,7 +393,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			e2KT289zGRHcABM0gGf7xZig9h8wD3qf0KJojYWMg/E=
+			gCdAINyl2jh8z2eREs6+JL2eoYcL1YXfHK4zNszaWMg=
 			</data>
 		</dict>
 		<key>Frameworks/FaceTecSDK.framework/GenericGuidanceContentLayout.nib</key>
@@ -668,7 +668,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ib6ffOdYddAFkKdMUV50ZFuqa9PeE5r3j7wP3/Tj/CU=
+			4aY8LBiXBZgRMqJO/KEumJEb5mrMGKGR+S2XQHYw9Ys=
 			</data>
 		</dict>
 		<key>Frameworks/FaceTrueIDSDK.framework/Info.plist</key>
@@ -915,7 +915,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q9S2xBmlxFUPh3YSJh5PeNtgzIayE3+qJaNvNRbrYEw=
+			AvLIZ7d9d8i8dJ7fvUHDNcV1Cxc4ebW735KogPX5S/E=
 			</data>
 		</dict>
 		<key>Frameworks/TrueIDSDK.framework/_CodeSignature/CodeResources</key>
@@ -966,21 +966,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ncwjRLdLjENcohifugpvvNThQhfuK/emif+d9Tot5fg=
+			KfAv1tY89IILfUeFTrH+9K3yi3JqqgB1XbksugOltzA=
 			</data>
 		</dict>
 		<key>Modules/TestTrueID.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UNv86nqu880CN1OTx3K4SKjnqcIfUmFNp4QNID5Yb0k=
+			h8lmnaEBf4YFQqncQ+EacijZQfxon4nTa7Y0ftCObv4=
 			</data>
 		</dict>
 		<key>Modules/TestTrueID.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ieaA/7Gzbr/X0+XSxvT8kUHvEp/pe89BRreBZfpB2dk=
+			mnvInHlT6Cpogtw3ChXd3jsnRH2REttUUXCwFaH02EY=
 			</data>
 		</dict>
 		<key>Modules/TestTrueID.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -994,14 +994,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ieaA/7Gzbr/X0+XSxvT8kUHvEp/pe89BRreBZfpB2dk=
+			mnvInHlT6Cpogtw3ChXd3jsnRH2REttUUXCwFaH02EY=
 			</data>
 		</dict>
 		<key>Modules/TestTrueID.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZQ2dkR6ypAFJQwodPUzhS9e+7YqgWoZFyeEk/jqXdWs=
+			CHw4RlW3RnEy3Y6rbEz1RcnhQ4w1zECkWtXHGkW9e+k=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
