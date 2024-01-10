@@ -138,16 +138,31 @@ Pod::Spec.new do |spec|
 
   #spec.xcconfig = { 'VALID_ARCHS' => 'arm64' }
   #spec.preserve_paths = "GalaxyPayPod.framework/*"
-  spec.framework  = "TestTrueID"
+  # spec.frameworks  = "TestTrueID"
 #spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386, arm64, x86_64' }
   #spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   #spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'armv7, arm64' }
   # spec.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
-  #spec.pod_target_xcconfig = { 'ARCHS[sdk=iphonesimulator*]' => 'arm64, arm64e, i386, x86_64' }
+ # spec.pod_target_xcconfig = { 'ARCHS[sdk=iphonesimulator*]' => '' }
+ 
+ spec.source_files = 'GalaxyPayPod/Frameworks/TestTrueID.framework/Headers/*.h'
+ spec.preserve_paths = 'GalaxyPayPod/Frameworks/TestTrueID.framework'
+ spec.xcconfig = { 'OTHER_LDFLAGS' => '-framework TestTrueID' }
+ spec.vendored_frameworks = 'GalaxyPayPod/Frameworks/TestTrueID.framework'
+ 
+ 
+ #spec.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/GalaxyPayPod/frameworks' } 
 
-  #spec.xcconfig = {
- #   'FRAMEWORK_SEARCH_PATH[sdk=iphoneos*]' => '$(inherited) "$(PODS_ROOT)/GalaxyPayPod"',
-#    'OTHERCFLAGS[sdk=iphoneos*]' => '$(inherited) -iframework "$(PODS_ROOT)/GalaxyPayPod"',
- #   'OTHER_LDFLAGS[sdk=iphoneos*]' => '$(inherited) -framework GalaxyPayPod'
- # }
+#  spec.xcconfig = {'VALID_ARCHS' =>  'x86_64' }
+ spec.xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+
+ #spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+#  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+
+#spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64', 'ENABLE_BITCODE' => 'NO' }
+
+#   spec.xcconfig = { 
+#   'FRAMEWORK_SEARCH_PATH[sdk=iphoneos*]' => '$(inherited) "$(PODS_ROOT)/GalaxyPayPod"', 
+#   'OTHERCFLAGS[sdk=iphoneos*]' => '$(inherited) -iframework "$(PODS_ROOT)/GalaxyPayPod"', 
+#   'OTHER_LDFLAGS[sdk=iphoneos*]' => '$(inherited) -framework GalaxyPayPod' }
 end

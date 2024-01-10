@@ -23,18 +23,18 @@
 /* Begin PBXBuildFile section */
 		B531D7842B4CF74300C07710 /* GalaxyPayPod.h in Headers */ = {isa = PBXBuildFile; fileRef = B531D7832B4CF74300C07710 /* GalaxyPayPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B531D78B2B4CF87D00C07710 /* GPMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531D78A2B4CF87D00C07710 /* GPMain.swift */; };
-		B531D78E2B4D345700C07710 /* TestTrueID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B531D78D2B4D345700C07710 /* TestTrueID.framework */; platformFilter = ios; };
-		B531D78F2B4D345700C07710 /* TestTrueID.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B531D78D2B4D345700C07710 /* TestTrueID.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5DFAF8E2B4E93610016FF35 /* TestTrueID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B531D78D2B4D345700C07710 /* TestTrueID.framework */; platformFilter = ios; };
+		B5DFAF8F2B4E93610016FF35 /* TestTrueID.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B531D78D2B4D345700C07710 /* TestTrueID.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B531D7902B4D345700C07710 /* Embed Frameworks */ = {
+		B5DFAF902B4E93610016FF35 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B531D78F2B4D345700C07710 /* TestTrueID.framework in Embed Frameworks */,
+				B5DFAF8F2B4E93610016FF35 /* TestTrueID.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B531D78E2B4D345700C07710 /* TestTrueID.framework in Frameworks */,
+				B5DFAF8E2B4E93610016FF35 /* TestTrueID.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +116,7 @@
 				B531D77C2B4CF74300C07710 /* Sources */,
 				B531D77D2B4CF74300C07710 /* Frameworks */,
 				B531D77E2B4CF74300C07710 /* Resources */,
-				B531D7902B4D345700C07710 /* Embed Frameworks */,
+				B5DFAF902B4E93610016FF35 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
