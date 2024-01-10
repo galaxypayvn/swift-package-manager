@@ -139,10 +139,11 @@ Pod::Spec.new do |spec|
   #spec.xcconfig = { 'VALID_ARCHS' => 'arm64' }
   #spec.preserve_paths = "GalaxyPayPod.framework/*"
   spec.framework  = "TestTrueID"
-  #spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphones*]' => 'i386' }
-  #spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphones*]' => 'x86_64' }
-  #spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphones*]' => 'arm64' }
-  spec.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
+#spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386, arm64, x86_64' }
+  #spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  #spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'armv7, arm64' }
+  # spec.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
+  #spec.pod_target_xcconfig = { 'ARCHS[sdk=iphonesimulator*]' => 'arm64, arm64e, i386, x86_64' }
 
   #spec.xcconfig = {
  #   'FRAMEWORK_SEARCH_PATH[sdk=iphoneos*]' => '$(inherited) "$(PODS_ROOT)/GalaxyPayPod"',
