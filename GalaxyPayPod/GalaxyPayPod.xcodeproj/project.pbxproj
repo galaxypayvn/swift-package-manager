@@ -23,8 +23,8 @@
 /* Begin PBXBuildFile section */
 		B531D7842B4CF74300C07710 /* GalaxyPayPod.h in Headers */ = {isa = PBXBuildFile; fileRef = B531D7832B4CF74300C07710 /* GalaxyPayPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B531D78B2B4CF87D00C07710 /* GPMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531D78A2B4CF87D00C07710 /* GPMain.swift */; };
-		B5DFAF8E2B4E93610016FF35 /* TestTrueID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B531D78D2B4D345700C07710 /* TestTrueID.framework */; platformFilter = ios; };
-		B5DFAF8F2B4E93610016FF35 /* TestTrueID.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B531D78D2B4D345700C07710 /* TestTrueID.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B591C9552B4FF5D100D36C06 /* TestTrueID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B591C9542B4FF5D100D36C06 /* TestTrueID.framework */; };
+		B591C9562B4FF5D100D36C06 /* TestTrueID.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B591C9542B4FF5D100D36C06 /* TestTrueID.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,7 +34,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B5DFAF8F2B4E93610016FF35 /* TestTrueID.framework in Embed Frameworks */,
+				B591C9562B4FF5D100D36C06 /* TestTrueID.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,7 +45,7 @@
 		B531D7802B4CF74300C07710 /* GalaxyPayPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GalaxyPayPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B531D7832B4CF74300C07710 /* GalaxyPayPod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GalaxyPayPod.h; sourceTree = "<group>"; };
 		B531D78A2B4CF87D00C07710 /* GPMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPMain.swift; sourceTree = "<group>"; };
-		B531D78D2B4D345700C07710 /* TestTrueID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TestTrueID.framework; path = GalaxyPayPod/frameworks/TestTrueID.framework; sourceTree = "<group>"; };
+		B591C9542B4FF5D100D36C06 /* TestTrueID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TestTrueID.framework; path = Frameworks/TestTrueID.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5DFAF8E2B4E93610016FF35 /* TestTrueID.framework in Frameworks */,
+				B591C9552B4FF5D100D36C06 /* TestTrueID.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +89,7 @@
 		B531D78C2B4D345700C07710 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B531D78D2B4D345700C07710 /* TestTrueID.framework */,
+				B591C9542B4FF5D100D36C06 /* TestTrueID.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -335,7 +335,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7TD6J7P82K;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -343,6 +343,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GalaxyPayPod/frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -376,7 +377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7TD6J7P82K;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -384,6 +385,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GalaxyPayPod/frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
