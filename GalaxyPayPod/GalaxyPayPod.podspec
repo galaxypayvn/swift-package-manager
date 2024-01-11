@@ -92,8 +92,9 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "GalaxyPayPod", "GalaxyPayPod/**/*.{h,m}", "GalaxyPayPod/frameworks/TestTrueID.framework/Headers/*.h"
-  #spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "GalaxyPayPod", "GalaxyPayPod/**/*.{h,m,swift}"
+  # spec.source_files = 'GalaxyPayPod/frameworks/TestTrueID.framework/Headers/*.h'
+  spec.exclude_files = 'GalaxyPayPod/frameworks/TestTrueID.framework/Headers/*.h'
 
   # spec.public_header_files = "Classes/**/*.h"
 
