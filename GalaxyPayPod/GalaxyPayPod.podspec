@@ -92,9 +92,9 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "GalaxyPayPod", "GalaxyPayPod/**/*.{h,m,swift}"
+  spec.source_files  = "GalaxyPayPod", "GalaxyPayPod/**/*.{h,m}"
   # spec.source_files = 'GalaxyPayPod/frameworks/TestTrueID.framework/Headers/*.h'
-  spec.exclude_files = 'GalaxyPayPod/frameworks/TestTrueID.framework/Headers/*.h'
+  spec.exclude_files = 'GalaxyPayPod/**/frameworks/TestTrueID.framework/Headers/*.h'
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -146,9 +146,9 @@ Pod::Spec.new do |spec|
   # spec.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
  # spec.pod_target_xcconfig = { 'ARCHS[sdk=iphonesimulator*]' => '' }
  
- spec.preserve_paths = 'GalaxyPayPod/frameworks/TestTrueID.framework'
+ spec.preserve_paths = 'GalaxyPayPod/GalaxyPayPod/frameworks/TestTrueID.framework'
 #  spec.xcconfig = { 'OTHER_LDFLAGS' => '-framework TestTrueID' }
- spec.vendored_frameworks = 'GalaxyPayPod/frameworks/TestTrueID.framework'
+ spec.vendored_frameworks = 'GalaxyPayPod/GalaxyPayPod/frameworks/TestTrueID.framework'
  
  
  #spec.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/GalaxyPayPod/frameworks' } 
