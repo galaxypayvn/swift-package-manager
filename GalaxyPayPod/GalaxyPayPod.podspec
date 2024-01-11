@@ -145,9 +145,9 @@ Pod::Spec.new do |spec|
   # spec.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
  # spec.pod_target_xcconfig = { 'ARCHS[sdk=iphonesimulator*]' => '' }
  
- spec.preserve_paths = 'Frameworks/TestTrueID.framework'
+ spec.preserve_paths = 'GalaxyPayPod/Frameworks/TestTrueID.framework'
 #  spec.xcconfig = { 'OTHER_LDFLAGS' => '-framework TestTrueID' }
- spec.vendored_frameworks = 'Frameworks/TestTrueID.framework'
+ spec.vendored_frameworks = 'GalaxyPayPod/Frameworks/TestTrueID.framework'
  
  
  #spec.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/GalaxyPayPod/frameworks' } 
