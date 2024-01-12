@@ -25,19 +25,6 @@
 		B531D78B2B4CF87D00C07710 /* GPMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531D78A2B4CF87D00C07710 /* GPMain.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		B5DFAF902B4E93610016FF35 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		B531D7802B4CF74300C07710 /* GalaxyPayPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GalaxyPayPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B531D7832B4CF74300C07710 /* GalaxyPayPod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GalaxyPayPod.h; sourceTree = "<group>"; };
@@ -110,7 +97,6 @@
 				B531D77C2B4CF74300C07710 /* Sources */,
 				B531D77D2B4CF74300C07710 /* Frameworks */,
 				B531D77E2B4CF74300C07710 /* Resources */,
-				B5DFAF902B4E93610016FF35 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
