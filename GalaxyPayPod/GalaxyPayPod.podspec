@@ -95,7 +95,7 @@ Pod::Spec.new do |spec|
   spec.source_files  = "GalaxyPayPod/Frameworks/TestTrueID.framework/Headers/*.h", "GalaxyPayPod/GalaxyPayPod/*.{h,m}"
   # spec.source_files = 'GalaxyPayPod/frameworks/TestTrueID.framework/Headers/*.h'
   # spec.public_header_files = "GalaxyPayPod/Frameworks/TestTrueID.framework/Headers/*.h"
-  spec.header_dir = "GalaxyPayPod/Frameworks/TestTrueID.framework/Headers"
+  # spec.header_dir = "GalaxyPayPod/Frameworks/TestTrueID.framework/Headers"
   # spec.public_header_files = "Classes/**/*.h"
 
 
