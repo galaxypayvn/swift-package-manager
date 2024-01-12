@@ -9,7 +9,7 @@ import Foundation
 
 //#if targetEnvironment(simulator)
 //#else
-@_implementationOnly import TestTrueID
+//@_implementationOnly import TestTrueID
 //#endif
 
 public class GPMain: NSObject {
@@ -23,7 +23,7 @@ public class GPMain: NSObject {
     
     public func testPod() {
 //        MainTrueIDSDK.shared.showMainVC()
-//        print("Test Pod")
+        print("Test Pod")
     }
     
     public func callTestTrueId() {
