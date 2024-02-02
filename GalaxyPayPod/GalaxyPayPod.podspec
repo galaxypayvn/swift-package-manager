@@ -15,8 +15,8 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "GalaxyPaySDK"
-  spec.version      = "0.0.3"
+  spec.name         = "GalaxyPayPod"
+  spec.version      = "1.9.9"
   spec.summary      = "A GalaxyPayPod only for test"
 
   # This description is used to generate tags and improve search results.
