@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "GalaxyPayPod"
-  spec.version      = "1.9.9_UAT"
+  spec.version      = "1.9.9"
   spec.summary      = "A GalaxyPayPod only for test"
 
   # This description is used to generate tags and improve search results.
@@ -81,7 +81,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/galaxypayvn/swift-package-manager.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/galaxypayvn/swift-package-manager.git", :tag => "#{spec.version}_UAT" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
