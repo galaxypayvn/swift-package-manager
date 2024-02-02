@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "GalaxyPayPod"
+  spec.name         = "GalaxyPaySDK"
   spec.version      = "0.0.3"
   spec.summary      = "A GalaxyPayPod only for test"
 
@@ -53,7 +53,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "NNK" => "" }
+  spec.author             = { "GalaxyPay" => "" }
   # Or just: spec.author    = "Nguyen Nhat Kiem"
   # spec.authors            = { "Nguyen Nhat Kiem" => "" }
   # spec.social_media_url   = "https://twitter.com/Nguyen Nhat Kiem"
@@ -92,7 +92,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "GalaxyPayPod/Frameworks/TestTrueID.framework/Headers/*.h", "GalaxyPayPod/GalaxyPayPod/*.{h,m}"
+  spec.source_files  = "GalaxyPayPod/Frameworks/GalaxyPaySDK.framework/Headers/*.h", "GalaxyPayPod/GalaxyPayPod/*.{h,m}"
   # spec.source_files = 'GalaxyPayPod/frameworks/TestTrueID.framework/Headers/*.h'
   # spec.public_header_files = "GalaxyPayPod/Frameworks/TestTrueID.framework/Headers/*.h"
   # spec.header_dir = "GalaxyPayPod/Frameworks/TestTrueID.framework/Headers"
@@ -146,9 +146,9 @@ Pod::Spec.new do |spec|
   # spec.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
  # spec.pod_target_xcconfig = { 'ARCHS[sdk=iphonesimulator*]' => '' }
  
- spec.preserve_paths = 'GalaxyPayPod/Frameworks/TestTrueID.framework'
+ spec.preserve_paths = 'GalaxyPayPod/Frameworks/GalaxyPaySDK.framework'
 #  spec.xcconfig = { 'OTHER_LDFLAGS' => '-framework TestTrueID' }
- spec.vendored_frameworks = 'GalaxyPayPod/Frameworks/TestTrueID.framework'
+ spec.vendored_frameworks = 'GalaxyPayPod/Frameworks/GalaxyPaySDK.framework'
  
  
  #spec.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/GalaxyPayPod/frameworks' } 
