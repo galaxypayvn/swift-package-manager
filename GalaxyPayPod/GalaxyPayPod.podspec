@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "GalaxyPayPod"
-  spec.version      = "1.9.9"
+  spec.version      = "1.9.9_UAT"
   spec.summary      = "A GalaxyPayPod only for test"
 
   # This description is used to generate tags and improve search results.
